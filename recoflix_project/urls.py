@@ -14,14 +14,14 @@ Including another URLconf
     2. Add a URL to urlpatterns:  path('blog/', include('blog.urls'))
 """
 from django.contrib import admin
-from django.urls import path, include
+from django.urls import re_path, include
 from recoflix import views
 
 urlpatterns = [
-    path('', views.index, name='index'),
-    path(r'^movies/', include('recoflix.urls')),
-    # path(r'^collect/', include('collector.urls')),
-    # path(r'^analytics/', include('analytics.urls')),
-    # path(r'^rec/', include('recommender.urls')),
-    path('admin/', admin.site.urls),
+    re_path('', views.index, name='index'),
+    re_path(r'^movies/', include('recoflix.urls')),
+    re_path(r'^collect/', include('collector.urls')),
+    re_path(r'^analytics/', include('analytics.urls')),
+    re_path(r'^rec/', include('recommender.urls')),
+    re_path('admin/', admin.site.urls),
 ]
