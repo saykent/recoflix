@@ -6,8 +6,9 @@ prs
 venv
 recommender/migrations
 collector/migrations
+analytics/migrations
+recoflix/migrations
 .prs
 cluster.png
 */__pycache__/*
 **/__pycache__/*
-analytics/migrations/*
