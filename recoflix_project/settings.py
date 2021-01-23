@@ -34,6 +34,7 @@ INSTALLED_APPS = [
     'recoflix.apps.RecoflixConfig',
     'analytics.apps.AnalyticsConfig',
     'collector.apps.CollectorConfig',
+    'recommender.apps.RecommenderConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
