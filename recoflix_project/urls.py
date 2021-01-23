@@ -18,7 +18,7 @@ from django.urls import re_path, include
 from recoflix import views
 
 urlpatterns = [
-    re_path('', views.index, name='index'),
+    re_path(r'^$', views.index, name='index'),
     re_path(r'^movies/', include('recoflix.urls')),
     re_path(r'^collect/', include('collector.urls')),
     re_path(r'^analytics/', include('analytics.urls')),

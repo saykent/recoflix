@@ -94,7 +94,7 @@
             $.getJSON(url,
                       function(result) {
 
-                        if (result.movie_results != null)
+                        if (result.movie_results != null && result.movie_results.length > 0)
                         {
                             img_tag =  document.getElementById('src_' + movie_id)
                             image_url = 'http://image.tmdb.org/t/p/w500/'
