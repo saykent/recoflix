@@ -30,5 +30,5 @@ Create a database and a user in psql
 ```
 CREATE DATABASE recoflix;
 CREATE USER recoflix_user WITH ENCRYPTED PASSWORD 'recoflix_password';
-GRANT ALL PRIVILEGES ON DATABASE recoflix_user TO recoflix;
+GRANT ALL PRIVILEGES ON DATABASE recoflix TO recoflix_user;
 ```
